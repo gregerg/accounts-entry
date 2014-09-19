@@ -3,7 +3,7 @@ layout: default
 username: Differential
 repo: accounts-entry
 desc: Meteor sign up and sign in pages.
-version: 0.8.0
+version: 0.9.0
 
 ---
 
@@ -59,8 +59,7 @@ You will get routes and the necessary templates for:
 /forgot-password
 ```
 
-{% assign special = '{{> accountButtons}}' %}
-You can then either add links to those directly, or use the `{{ special }}` helper we provide to give you the apppropriate links for signed-in/signed-out users.  The `{{ special }}` helper will display a sign-out link and the user's email address when they are signed-in.
+You can then either add links to those directly, or use the ```{{> accountButtons}}``` helper we provide to give you the apppropriate links for signed-in/signed-out users.  The ```{{> accountButtons}}``` helper will display a sign-out link and the user's email address when they are signed-in.
 
 ## Ensuring signed in users for routes
 
